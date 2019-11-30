@@ -1,0 +1,25 @@
+######################Algorithm######################################
+#Student Name: Joel Alex
+#Student id: jalex1
+#
+#This is the algorithm for assignment 2 which uses usage_data_file as database to lookup while passing curresponding arguments.
+#
+#
+######function###getlist(filelist)##################################
+#This function can be called with either "user" argument or "Host" argument.
+#If this function is called using the "user" argument, our script will fetch a list of users from usage_data_function file.
+#If this function is called using the "host" argument, our script will fetch a list of hosts from usage_data_function file.
+#After calling this function, each value will be feeded in login_records
+#
+#
+#
+#######function#####cal_daily_usage(subject, login_recs)#############
+#This function fetches data from usage_data_file where the script calculates usage in seconds by considering the time given in usage_data_file and calculates a total of it.
+#Here tuple gets converted into standard format and checks if the date is present and if present replaces it with seconds.
+#
+#
+##############function:######cal_weekly_usage(subject, login_recs)###########
+#This function calculates the weekly usage report of a user in seconds.
+#
+#
+#The last one is the main function started off by parsing the arguments

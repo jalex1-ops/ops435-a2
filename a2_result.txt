@@ -1,0 +1,137 @@
+Test data file: a2_final_data
+rchan    pts/9        10.40.105.99     Tue Feb 13 16:53:42 2018 - Tue Feb 13 16:57:02 2018  (00:09)    
+rchan    pts/8        10.40.105.99     Tue Feb 13 19:28:43 2018 - Tue Feb 13 20:28:31 2018  (00:00)    
+rchan    pts/2        10.40.105.99     Tue Feb 14 16:22:00 2018 - Tue Feb 14 16:45:00 2018  (00:00)    
+asmith   pts/2        10.40.105.130    Tue Feb 13 16:19:29 2018 - Tue Feb 13 16:22:00 2018  (00:00)    
+rchan    pts/4        10.40.105.99     Tue Feb 15 16:17:21 2018 - Tue Feb 15 16:30:10 2018  (00:00)    
+asmith   pts/13       10.40.105.130    Tue Feb 13 16:07:52 2018 - Tue Feb 13 16:45:52 2018  (00:00)    
+asmith   pts/11       10.40.105.130    Tue Feb 13 14:07:43 2018 - Tue Feb 13 16:07:43 2018  (00:00)
+rchan    pts/9        10.40.105.99     Tue Jun 12 16:53:42 2018 - Tue Jun 12 16:57:02 2018  (00:00)    
+rchan    pts/8        10.40.105.99     Tue Jun 12 19:28:43 2018 - Tue Jun 12 20:28:33 2018  (00:00)    
+rchan    pts/2        10.40.105.99     Tue Jun 12 10:22:00 2018 - Tue Jun 12 10:45:00 2018  (00:00)    
+asmith   pts/2        10.40.105.130    Tue Jun 12 12:19:29 2018 - Tue Jun 19 16:22:00 2018  (99:99)    
+rchan    pts/4        10.40.105.99     Tue Jun 12 20:17:20 2018 - Tue Jun 19 16:30:10 2018  (99:99)    
+asmith   pts/13       10.40.105.130    Tue Jun 12 18:07:52 2018 - Tue Jun 19 16:45:52 2018  (99:99) 
+usage: ur.py [-h] [-l {user,host}] [-r RHOST] [-t {daily,weekly}] [-u USER]
+             [-v]
+             F
+
+Usage Report based on the last command
+
+positional arguments:
+  F                     list of files to be processed
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l {user,host}, --list {user,host}
+                        generate user name or remote host IP from the given
+                        files
+  -r RHOST, --rhost RHOST
+                        generate user name or remote host IP from the given
+                        files
+  -t {daily,weekly}, --type {daily,weekly}
+                        type of report: daily,weekly
+  -u USER, --user USER  usage report for the given username
+  -v, --verbose         tune on output verbosity
+
+Copyright 2019 - Joel Alex
+User   list for a2_final_data
+==============================
+asmith
+rchan
+
+Host   list for a2_final_data
+==============================
+10.40.105.130
+10.40.105.99
+
+Daily usage report for rchan
+=============================
+Date          Usage in seconds
+2018 02 13        3588
+2018 02 14        5168
+2018 02 15        5937
+2018 06 12        6137
+
+Total             602277
+Weekly usage report for rchan
+==============================
+Week #        Usage in seconds
+2018 07            37882018 24            6137
+Total              602277
+Daily usage report for 10.40.105.99
+====================================
+Date          Usage in seconds
+2018 02 13        3588
+2018 02 14        5168
+2018 02 15        5937
+2018 06 12        6137
+
+Total             602277
+Weekly usage report for 10.40.105.99
+=====================================
+Week #        Usage in seconds
+2018 07            37882018 24            6137
+Total              602277
+Files to be processed: a2_final_data
+Type of args for files <class 'list'>
+User   list for a2_final_data
+==============================
+asmith
+rchan
+
+Files to be processed: a2_final_data
+Type of args for files <class 'list'>
+Host   list for a2_final_data
+==============================
+10.40.105.130
+10.40.105.99
+
+Files to be processed: a2_final_data
+Type of args for files <class 'list'>
+Usage report for user: asmith
+Usage report type: daily
+Processing usage report for the following:
+reading login/logout record files a2_final_data
+Daily usage report for asmith
+==============================
+Date          Usage in seconds
+2018 02 13        2280
+2018 06 12        628982
+
+Total             1228862
+Files to be processed: a2_final_data
+Type of args for files <class 'list'>
+Usage report for user: asmith
+Usage report type: weekly
+Processing usage report for the following:
+reading login/logout record files a2_final_data
+Weekly usage report for asmith
+===============================
+Week #        Usage in seconds
+2018 07            24312018 24            628982
+Total              1228862
+Files to be processed: a2_final_data
+Type of args for files <class 'list'>
+Usage report for remote host: 10.40.105.130
+Usage report type: daily
+Processing usage report for the following:
+reading login/logout record files a2_final_data
+Daily usage report for 10.40.105.130
+=====================================
+Date          Usage in seconds
+2018 02 13        2280
+2018 06 12        628982
+
+Total             1228862
+Files to be processed: a2_final_data
+Type of args for files <class 'list'>
+Usage report for remote host: 10.40.105.130
+Usage report type: weekly
+Processing usage report for the following:
+reading login/logout record files a2_final_data
+Weekly usage report for 10.40.105.130
+======================================
+Week #        Usage in seconds
+2018 07            24312018 24            628982
+Total              1228862
